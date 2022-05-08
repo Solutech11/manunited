@@ -3,7 +3,7 @@ import { StyleSheet,View,Text,TouchableOpacity,ImageBackground,SafeAreaView } fr
 import {StatusBar} from 'expo-status-bar'
 
 function Start({navigation}) {
-    const cover = {uri:"https://i.pinimg.com/originals/aa/c7/2d/aac72d53ec2785a6d129088c89ed77c5.png"}
+    const cover = require('../appimages/home.png')
     return (
         <SafeAreaView style={styles.body}>
             <ImageBackground source={cover} resizeMode='cover' style={{width:"100%", height:"100%", display:'flex', flexDirection:'column',justifyContent:'flex-end',paddingVertical:10,alignItems:'center' }} >
