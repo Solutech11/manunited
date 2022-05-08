@@ -7,14 +7,14 @@ function Favourites(props) {
         return text.slice(0, 50)+"...";
     }
     
-    const getfave = async ()=>{
-        try {
-            const jsonvalue= await AsyncStorage.getItem("@favBookmark")
-            return jsonvalue != null ? JSON.parse(jsonvalue) :null
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // const getfave = async ()=>{
+    //     try {
+    //         const jsonvalue= await AsyncStorage.getItem("@favBookmark")
+    //         return jsonvalue != null ? JSON.parse(jsonvalue) :null
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
     const [favlist,updatefavelist]= useState(getfave)
 
     return(
